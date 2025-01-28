@@ -87,25 +87,20 @@
             text-justify: inter-word;
         }
 
-        .skills, .certifications, .projects {
+        .skills, .certifications, .projects, .additional-technologies {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 2rem;
         }
 
-        .skills ul, .certifications ul {
+        .skills ul, .certifications ul, .additional-technologies ul {
             list-style-type: none;
             padding: 0;
         }
 
-        .skills li, .certifications li, .projects .project li {
+        .skills li, .certifications li, .projects .project li, .additional-technologies li {
             margin-bottom: 0.8rem;
             font-size: 1.1rem;
-        }
-
-        .skills ul, .certifications ul {
-            list-style-type: none;
-            padding: 0;
         }
 
         .projects {
@@ -160,7 +155,7 @@
         }
 
         @media (max-width: 768px) {
-            .skills, .certifications {
+            .skills, .certifications, .additional-technologies {
                 grid-template-columns: 1fr;
             }
 
@@ -233,6 +228,18 @@
                 <li>Copilot</li>
                 <li>Power BI</li>
                 <li>Dataverse</li>
+                <li>SharePoint</li>
+            </ul>
+        </section>
+
+        <section id="additional-technologies" class="additional-technologies">
+            <h2>Additional Technologies</h2>
+            <ul>
+                <li>SQL, PySpark, R, HTML/CSS</li>
+                <li>Git, GitHub, GitHub Copilot</li>
+                <li>Azure, Ansible Tower</li>
+                <li>Postman, APIs</li>
+                <li>PowerShell ISE, CMD</li>
             </ul>
         </section>
 
