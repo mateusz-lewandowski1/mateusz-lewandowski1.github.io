@@ -65,14 +65,30 @@
         }
 
         section {
-            margin-bottom: 3rem;
+            background-color: #fff;
+            padding: 3rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         h2 {
-            font-size: 2rem;
-            margin-bottom: 1rem;
+            font-size: 2.2rem;
+            margin-bottom: 0.6rem;
             color: #1ABC9C;
             text-align: center;
+            text-transform: capitalize;
+            letter-spacing: 1px;
+            position: relative;
+        }
+
+        h2::after {
+            content: "";
+            display: block;
+            width: 100%; /* Line spans the full width */
+            height: 2px; /* Reduced thickness for a more subtle look */
+            background-color: #1ABC9C;
+            margin: 0.6rem auto 0;
         }
 
         p {
@@ -81,7 +97,6 @@
             margin-bottom: 1rem;
         }
 
-        /* Justified text for the About section */
         #about p {
             text-align: justify;
             text-justify: inter-word;
@@ -110,15 +125,16 @@
         }
 
         .project {
-            background: white;
-            padding: 1.5rem;
+            background: #fff;
+            padding: 1.8rem;
             border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
             transition: transform 0.3s ease-in-out;
         }
 
         .project:hover {
-            transform: translateY(-10px);
+            transform: translateY(-15px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
         }
 
         .project h3 {
@@ -144,9 +160,11 @@
 
         footer {
             text-align: center;
-            padding: 1rem;
+            padding: 2rem;
             background: #34495E;
             color: white;
+            margin-top: 2rem;
+            border-radius: 8px;
         }
 
         footer a {
@@ -155,6 +173,10 @@
         }
 
         @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+
             .skills, .certifications, .additional-technologies {
                 grid-template-columns: 1fr;
             }
@@ -164,7 +186,6 @@
             }
         }
 
-        /* Center contact section */
         #contact p {
             text-align: center;
         }
@@ -188,7 +209,7 @@
     <div class="container">
         <section id="about">
             <h2>About Me</h2>
-            <p>I hold a Master’s degree in Business Informatics and currently work as an Intelligent Automation Developer. My passion lies in bridging the gap between technology and business strategies to deliver impactful results. Driven by a constant desire to improve, I embrace continuous learning as a core principle, which fuels both my personal and professional growth and motivates me to achieve greater success in every project I undertake.</p>
+            <p>I have a Master's in Business Informatics and work as an Intelligent Automation Developer. I'm passionate about combining technology with business strategies to create meaningful results. I’m always looking for ways to learn and grow, both personally and professionally, which empowers me to deliver successful results in every desired aspect.</p>
         </section>
 
         <section id="projects" class="projects">
@@ -196,13 +217,13 @@
 
             <div class="project">
                 <h3>Project 1: Checklist Automation</h3>
-                <p>Python project which automates the process of filling out a decommission checklist using Selenium and Excel. The tool reads asset names and their statuses from an Excel file and interacts with a web application (in Power Apps) to tick the appropriate checkboxes. It also marks the processed asset names in green in the Excel file.</p>
+                <p>Python project which automates the process of filling out a decommission checklist using Selenium and Excel. </p>
                 <a href="https://github.com/mateusz-lewandowski1/checklist_filler_public" target="_blank">View on GitHub</a>
             </div>
 
             <div class="project">
                 <h3>Project 2: Online Shop Tester</h3>
-                <p>Python bot designed to test and simulate the entire purchasing flow of an internal online shop. It handles tasks like logging into user accounts, selecting items, adding them to the cart, checking out, and canceling orders. It sends event notifications such as successful cancellations to a Microsoft Teams channel for monitoring.</p>
+                <p>Python bot designed to test and simulate the entire purchasing flow of an internal online shop.</p>
                 <a href="https://github.com/mateusz-lewandowski1/shop_tester_public" target="_blank">View on GitHub</a>
             </div>
         </section>
@@ -210,22 +231,22 @@
         <section id="skills" class="skills">
             <h2>Python Skills</h2>
             <ul>
-                <li>OOP (Object-Oriented Programming)</li>
-                <li>Selenium for Browser Automation</li>
-                <li>FastAPI</li>
-                <li>Asynchronous Programming (asyncio)</li>
-                <li>Requests for HTTP Requests</li>
+                <li></li>
+                <li></li>
+                <li>Object Oriented Programming</li>
+                <li>Selenium, BeautifulSoup, PyAutoGUI</li>
+                <li>FastAPI, Asyncio, Requests</li>
                 <li>Unit Testing (unittest)</li>
-                <li>BeautifulSoup for Web Scraping</li>
-                <li>Pandas & NumPy</li>
+                <li>Pandas, NumPy, Scikit-learn fundamentals</li>
                 <li>Excel Automation</li>
-                <li>PyAutoGUI</li>
                 <li>Django & Flask (basics)</li>
                 <li>LLMs, RAG, GENai, Semantic Search (theory basics)</li>
             </ul>
 
             <h2>Power Platform Skills</h2>
             <ul>
+                <li></li>
+                <li></li>
                 <li>Power Apps</li>
                 <li>Power Automate</li>
                 <li>Copilot</li>
@@ -238,6 +259,8 @@
         <section id="additional-technologies" class="additional-technologies">
             <h2>Additional Technologies</h2>
             <ul>
+                <li></li>
+                <li></li>
                 <li>SQL, PySpark, R, HTML/CSS</li>
                 <li>Git, GitHub, GitHub Copilot</li>
                 <li>Azure, Ansible Tower</li>
@@ -249,6 +272,8 @@
         <section id="certifications" class="certifications">
             <h2>Certifications</h2>
             <ul>
+                <li></li>
+                <li></li>
                 <li><a href="https://github.com/mateusz-lewandowski1/mateusz-lewandowski1.github.io/blob/main/Altkom_Akademia.pdf" target="_blank">Advanced Python Programming Techniques</a></li>
                 <li><a href="https://www.credly.com/badges/a39d9f0c-cdef-43b0-82a3-fbdf2e26384e/email" target="_blank">EY Artificial Intelligence - AI Engineering - Bronze Learning (2024)</a></li>
                 <li><a href="https://www.credly.com/badges/b59fceaf-0288-4f8c-9451-7eb96bc12bc9" target="_blank">EY Analytics - Data visualization - Silver Learning (2024)</a></li>
